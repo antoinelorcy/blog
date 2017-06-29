@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+
+{{if .Site.Params.cover}}
+{{if or (eq (substr .Site.Params.cover 0 7) "http://") (eq (substr .Site.Params.cover 0 8) "https://")}}
+  <header class="main-header" style="background-image: url({{.Site.Params.cover}})">
+  {{ else }}
+  <header class="main-header" style="background-image: url({{.Site.Params.cover | relURL}})">
+  {{ end }}
+{{else}}
+<header class="main-header no-cover">
+{{end}}
+    <div class="header-wrapper">
+      {{ partial "navigation.html" . }}
+      <div class="vertical">
+          <div class="main-header-content inner">
+              
+              <h1 class="page-title">{{ .Site.Title }}</h1>
+              <h2 class="page-description">{{ .Site.Params.description }}</h2>
+          </div>
+      </div>
+      <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+    </div>
+</header>
+
+
+<main id="content" class="content" role="main">
+
+{{ partial "home-content.html" . }}
+
+</main>
+
+{{ partial "footer.html" . }}

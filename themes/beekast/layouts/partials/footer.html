@@ -1,0 +1,16 @@
+    <footer class="site-footer clearfix">
+        <p>
+            {{ .Site.Params.about }}
+        </p>
+        {{ partial "social.html" . }}
+        <div class="copyright">2017 © {{ .Site.Params.author }}</div>
+    </footer>
+    </div>
+    <script type="text/javascript" src="{{"js/jquery.js" | relURL}}"></script>
+    <script type="text/javascript" src="{{"js/jquery.fitvids.js" | relURL}}"></script>
+    <script type="text/javascript" src="{{"js/index.js" | relURL}}"></script>
+    {{ if .Site.Params.customFooterPartial }}
+        {{ partial .Site.Params.customFooterPartial . }}
+    {{ end }}
+</body>
+</html>

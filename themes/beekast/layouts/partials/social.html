@@ -1,0 +1,38 @@
+<div class="socials">
+    {{ if .Site.Params.facebookName }}
+        <a class="bloglogo" href="https://www.facebook.com/{{ .Site.Params.facebookName }}" target="_blank">
+            <span class="facebook">
+                <img src="{{.Site.Params.facebookIcon | relURL}}" alt="">
+            </span>
+        </a>
+    {{end}}
+
+
+    {{ if .Site.Params.twitterName }}
+        <a class="bloglogo" href="https://twitter.com/{{ .Site.Params.twitterName }}" target="_blank">
+            <span class="twitter">
+                <img src="{{.Site.Params.twitterIcon | relURL}}" alt="">
+            </span>
+        </a>
+    {{end}}
+
+    {{ if .Site.Params.linkedinName }}
+        <a class="bloglogo" href="https://www.linkedin.com/in/{{ .Site.Params.linkedinName }}" target="_blank">
+            <span class="linkedin">
+                <img src="{{.Site.Params.linkedinIcon | relURL}}" alt="">
+            </span>
+        </a>
+    {{end}}
+
+    {{ if .Site.Params.youtubeName }}
+        <a class="bloglogo" href="https://www.youtube.com/channel/{{ .Site.Params.youtubeName }}" target="_blank">
+            <span class="youtube">
+                <img src="{{.Site.Params.youtubeIcon | relURL}}" alt="">
+            </span>
+        </a>
+    {{end}}
+
+    <a class="button" href="{{ .Site.Params.websiteUrl }}"><span>{{ .Site.Params.websiteLabel }}</span></a>
+    <a class="button" href="{{ .Site.Params.appUrl }}"><span>{{ .Site.Params.appLabel }}</span></a>
+
+</div>

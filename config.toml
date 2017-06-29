@@ -1,0 +1,59 @@
+baseURL = "https://www.beekast.com/blog"
+copyright = "All rights reserved - Beekast 2017"
+languageCode = "en-us"
+DefaultContentLanguageInSubdir = true
+DefaultContentLanguage = "fr"
+title = "Beekast"
+theme = "beekast"
+paginate = 5
+
+[params]
+author = "Beekast"
+authorlocation = "Paris, France"
+authorwebsite = "https://www.beekast.com/"
+description = "Be productive, Be fun, Beekast."
+
+homeURL = "/blog/"
+
+facebookName = "beekastofficial"
+twitterName = "beekast"
+linkedinName = "beekast"
+youtubeName = "UCJ8f1M_HOc-77noHQ30I8bw"
+facebookIcon = "images/social_logo_facebook.png"
+twitterIcon = "images/social_logo_twitter.png"
+linkedinIcon = "images/social_logo_linkedin.png"
+youtubeIcon = "images/social_logo_youtube.png"
+
+cover = "images/1950x1300-reunion-productivite.jpg"
+image = "images/1950x1300-reunion-productivite.jpg"
+logo = "images/logo_blanc.png"
+customCSS = ["css/custom.css"]
+
+appUrl = "https://my.beekast.com/"
+websiteUrl = "https://www.beekast.com/"
+
+[Languages]
+
+[Languages.fr]
+title = "Le blog beekast"
+about = "Beekast est une solution web et mobile, simple et intelligente, permettant aux réunions, événements et formations de gagner en productivité et en interactivité. Les participants accèdent à Beekast directement depuis leur smartphone pour participer à des animations lancées par le présentateur et partager leurs opinions de manière collaborative."
+menuAbout = "Qui sommes-nous ?"
+menuAboutUrl = "http://www.beekast.com/fr/equipe"
+menuContact = "Contactez-nous"
+menuContactUrl = "http://www.beekast.com/fr/#contact-us"
+appLabel = "L'application"
+websiteLabel = "Le site"
+iconFlag = "images/fr_flag.png"
+weight = 1
+
+[Languages.en]
+title = "Beekast's blog"
+about = "Beekast is a simple, intelligent web and mobile solution that enables meetings, events and training to increase productivity and interactivity. Participants access Beekast directly from their smartphone to participate in animations launched by the presenter and share their opinions in a collaborative way."
+menuAbout = "Who we are ?"
+menuAboutUrl = "http://www.beekast.com/en/team"
+menuContact = "Contact us"
+menuContactUrl = "http://www.beekast.com/en/#contact-us"
+appLabel = "App"
+websiteLabel = "Website"
+iconFlag = "images/en_flag.png"
+weight = 2

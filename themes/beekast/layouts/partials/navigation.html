@@ -1,0 +1,14 @@
+<nav class="main-nav overlay clearfix">
+	{{ if .Site.Params.logo }}
+		<a class="blog-logo" href="{{ .Site.Params.homeURL }}"><img src="{{ .Site.Params.logo  | relURL}}" alt="Blog Logo" /></a>
+	{{end}}
+	<div class="buttons">
+		{{ if .IsTranslated }}
+			{{ range .Translations }}
+			<a class="menu-button lang" href="{{ .Permalink }}"><img src="{{ .Site.Params.iconflag  | relURL }}"> {{ .Lang }}</a>
+			{{ end }}
+		{{ end }}
+		<a class="menu-button" href="{{ .Site.Params.menucontacturl }}" target="_blank"><span class="word">{{ .Site.Params.menucontact }}</span></a>
+		<a class="menu-button" href="{{ .Site.Params.menuabouturl }}" target="_blank"><span class="word">{{ .Site.Params.menuabout }}</span></a>
+	</div>
+</nav>

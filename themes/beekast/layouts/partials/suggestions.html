@@ -2,6 +2,7 @@
   {{ with .NextInSection }}
       <a class="read-next-story" style="{{ if .Params.image }}background-image: url({{ .Params.image | relURL }}){{ else }}no-cover{{ end }}" href="{{ .RelPermalink }}">
           <section class="post">
+			  <span class="button">{{ i18n "nextPost" }}</span>
               <h2>{{.Title}}</h2>
               <!-- <p>{{ substr .Summary 0  }}</p> -->
           </section>
@@ -10,6 +11,7 @@
   {{ with .PrevInSection }}
       <a class="read-next-story prev" style="{{ if .Params.image }}background-image: url({{ .Params.image  | relURL}}){{ else }}no-cover{{ end }}" href="{{ .RelPermalink }}">
           <section class="post">
+			  <span class="button">{{ i18n "mightEnjoyThis" }}</span>
               <h2>{{.Title}}</h2>
           </section>
       </a>

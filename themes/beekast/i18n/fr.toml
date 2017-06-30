@@ -1,2 +1,8 @@
 [shareThis]
 other = "Partagez cet article"
+
+[nextPost]
+other = "Prochain article"
+
+[mightEnjoyThis]
+other = "Vous aimerez aussi"

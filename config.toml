@@ -1,10 +1,14 @@
 baseURL = "https://www.beekast.com/blog"
 copyright = "All rights reserved - Beekast 2017"
 languageCode = "en-us"
-DefaultContentLanguageInSubdir = true
-DefaultContentLanguage = "fr"
 title = "Beekast"
 theme = "beekast"
+
+googleAnalytics = "UA-73802522-1"
+
+DefaultContentLanguageInSubdir = true
+DefaultContentLanguage = "fr"
+
 paginate = 5
 
 [params]
@@ -46,6 +50,10 @@ websiteLabel = "Le site"
 iconFlag = "images/fr_flag.png"
 weight = 1
 
+[Languages.fr.Taxonomies]
+categorie = "categories"
+tag = "tags"
+
 [Languages.en]
 title = "Beekast's blog"
 about = "Beekast is a simple, intelligent web and mobile solution that enables meetings, events and training to increase productivity and interactivity. Participants access Beekast directly from their smartphone to participate in animations launched by the presenter and share their opinions in a collaborative way."
@@ -57,3 +65,7 @@ appLabel = "App"
 websiteLabel = "Website"
 iconFlag = "images/en_flag.png"
 weight = 2
+
+[Languages.en.Taxonomies]
+category = "categories"
+tag = "tags"
